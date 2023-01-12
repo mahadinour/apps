@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:hint="for balance tap hear"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="our services"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="85dp"
+                android:onClick="sendMoney"
+                android:layout_margin="3dp"
+                android:text="send money"
+                />
+
+            <Button
+                android:onClick="cashOut"
+                android:layout_width="95dp"
+                android:layout_height="85dp"
+                android:layout_margin="3dp"
+                android:text="cash out" />
+
+            <Button
+                android:onClick="mobileRecharge"
+                android:layout_width="95dp"
+                android:layout_gravity="center"
+                android:layout_height="85dp"
+                android:layout_margin="3dp"
+                android:text="mobile recharge" />
+            <Button
+                android:onClick="addMoney"
+                android:layout_width="95dp"
+                android:layout_height="85dp"
+                android:layout_margin="3dp"
+                android:text="add money" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:onClick="transferMoney"
+            android:layout_width="95dp"
+            android:layout_height="85dp"
+            android:layout_margin="3dp"
+            android:text="transfer money" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="222dp">
+
+        <Button
+
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:text="home" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
